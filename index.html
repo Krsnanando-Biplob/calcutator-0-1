@@ -12,9 +12,14 @@
   <title>Calculator</title>
 </head>
 <body class="bg-gray-200 h-screen flex items-center justify-center">
-  <div class="bg-white pt-20 min-h-[95%] p-8 rounded shadow-md w-100">
-    <div class="mb-4">
-      <input  placeholder="00" type="text" id="display" class="w-full p-2 text-2xl border-1 h-20 border-[#e35259] rounded" readonly>
+  
+<div class="bg-white pt-20 min-h-[95%] p-8 rounded shadow-md w-100">
+  <div id="datetime-container" class="mb-1 justify-end">
+    <p id="date"></p>
+    <p id="time"></p>
+  </div>
+  <div class="mb-4 border-2 rounded	 border-[#e35259]">
+      <input  placeholder="00" type="text" id="display" class="w-full p-2 text-2xl h-20 rounded" readonly>
     </div>
     <div class="flex flex-col w-full">
       <div class="divider divider-error underline underline-offset-4 hover:font-bold text-xl hover:text-2xl ease-in-out duration-200 ">Calculator</div>
@@ -42,6 +47,7 @@
       <button class="btn" onclick="calculate()('')">=</button>
     </div>
   </div>
+  
 
   <script src="./dom.js"></script>
 </body>
